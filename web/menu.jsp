@@ -32,7 +32,7 @@
             <li><a href="RelatorioCargFuncController"><span title="Relatorio">Relatório de Departamentos</span></a></li>
             <li><a href="RelatorioCartaoController"><span title="Relatorio">Relatório de Cartões</span></a></li>
             <li><a href="RelatorioInformeController"><span title="Relatorio">Relatório de Informes</span></a></li>
-           
+            <li><a href="RelatorioHorarioController"><span title="Relatorio">Relatório de Horários</span></a></li>
             
     </ul>
     

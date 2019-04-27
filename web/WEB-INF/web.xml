@@ -108,6 +108,10 @@
         <servlet-name>RelatorioInformeController</servlet-name>
         <servlet-class>relatorio.RelatorioInformeController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RelatorioHorarioController</servlet-name>
+        <servlet-class>relatorio.RelatorioHorarioController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>PesquisaAfastamentoController</servlet-name>
         <url-pattern>/PesquisaAfastamentoController</url-pattern>
@@ -215,6 +219,10 @@
     <servlet-mapping>
         <servlet-name>RelatorioInformeController</servlet-name>
         <url-pattern>/RelatorioInformeController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioHorarioController</servlet-name>
+        <url-pattern>/RelatorioHorarioController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
