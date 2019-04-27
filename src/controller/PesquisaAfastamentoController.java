@@ -22,7 +22,7 @@ public class PesquisaAfastamentoController extends HttpServlet {
         if(acao.equals("Only")){
             request.setAttribute("acao", acao);
             request.setAttribute("afastamentos", AfastamentoDAO.getInstance().getAllAfastamentos());
-            request.setAttribute("funcionarios", FuncionarioDAO.getInstance().getAllFuncionarios());
+            request.setAttribute("funcionario", FuncionarioDAO.getInstance().getFuncionario(id));
         }else{
             request.setAttribute("afastamentos", AfastamentoDAO.getInstance().getAllAfastamentos());
             request.setAttribute("funcionarios", FuncionarioDAO.getInstance().getAllFuncionarios());

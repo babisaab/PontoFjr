@@ -27,7 +27,7 @@
                     <td><c:out value="${afastamento.justificativa}" /></td>
                     <td><c:out value="${afastamento.tipo}" /></td>
                     <c:if test="${acao != 'Only'}">
-                        <td><c:forEach items="${funcionarios}" var="funcionario"><c:if test="${afastamento.idFuncionario == funcionario.id}"><c:out value="${funcionario.nomeCompleto}" /></c:if></c:forEach></td>
+                        <td><c:forEach items="${funcionarios}" var="funcionario"><c:if test="${afastamento.funcionario.id == funcionario.id}"><c:out value="${funcionario.nomeCompleto}" /></c:if></c:forEach></td>
                         <td><a href=
                            "ManterAfastamentoController?acao=prepararOperacao&operacao=Editar&id=${afastamento.id}">Editar</a></td>
                         <td><a href=

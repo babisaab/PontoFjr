@@ -33,7 +33,7 @@
                         <td>
                             <select name="optFuncionario" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
                             <c:forEach items="${funcionarios}" var="funcionario">
-                                <option value="${funcionario.id}" <c:if test="${afastamento.idFuncionario == funcionario.id}"> selected</c:if>>${funcionario.nomeCompleto}</option>  
+                                <option value="${funcionario.id}" <c:if test="${afastamento.funcionario.id == funcionario.id}"> selected</c:if>>${funcionario.nomeCompleto}</option>  
                             </c:forEach>
                         </select>
                     </td>
