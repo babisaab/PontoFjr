@@ -26,7 +26,7 @@
                     <td>Departamento:</td>
                     <td>
                         <select name="optDepartamento" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
-                            <c:forEach items="${departamentos}" var="funcionario">
+                            <c:forEach items="${departamentos}" var="departamento">
                                 <option value="${departamento.id}" <c:if test="${cargo.departamento.id == departamento.id}"> selected</c:if>>${departamento.nome}</option>  
                             </c:forEach>
                         </select>
