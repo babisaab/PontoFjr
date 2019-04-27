@@ -27,9 +27,9 @@
             <li><a href="PesquisaUsuarioController"><span title="Usuario">Usuário</span></a></li>
             
             
-            <li><a href="RelatorioAfastFuncController"><span title="Relatorio">Relatório Afastamentos</span></a></li>
-            <li><a href="RelatorioCargDeptController"><span title="Relatorio">Relatório Cargos por departamento</span></a></li>
-            <li><a href="RelatorioCargFuncController"><span title="Relatorio">Relatório Departamentos</span></a></li>
+            <li><a href="RelatorioAfastFuncController"><span title="Relatorio">Relatório de Afastamentos</span></a></li>
+            <li><a href="RelatorioCargDeptController"><span title="Relatorio">Relatório de Cargos</span></a></li>
+            <li><a href="RelatorioCargFuncController"><span title="Relatorio">Relatório de Departamentos</span></a></li>
             <li><a href="RelatorioCartaoController"><span title="Relatorio">Relatório de Cartões</span></a></li>
             <li><a href="RelatorioInformeController"><span title="Relatorio">Relatório de Informes</span></a></li>
            
@@ -39,10 +39,10 @@
       <ul>
             <li><a href="PesquisaAfastamentoController?acao=Only&id=${idFuncionario}"><span title="Seus Afastamentos">Seus Afastamentos</span></a></li>
             <li><a href="PesquisaCartaoController?acao=Only&id=${idFuncionario}"><span title="Seus Cartões">Seus Cartões</span></a></li>
-            <li><a href="PesquisaHorarioController?acao=Only&id=${idFuncionario}"><span title="Seus Horarios">Seus Horarios</span></a></li>
+            <li><a href="PesquisaHorarioController?acao=Only&id=${idFuncionario}"><span title="Seus Horários">Seus Horarios</span></a></li>
             <li><a href="PesquisaInformeController?acao=Only&id=${idFuncionario}"><span title="Seus Informes">Seus Informes</span></a></li>
-            <li><a href="PontoController?acao=Entrada&id=${idFuncionario}"><span title="Marcar Entrada">Marcar Entrada</span></a></li>
-            <li><a href="PontoController?acao=Saida&id=${idFuncionario}"><span title="Marcar Saida">Marcar Saida</span></a></li>
+            <!------ <li><a href="PontoController?acao=Entrada&id=${idFuncionario}"><span title="Marcar Entrada">Marcar Entrada</span></a></li> ---------->
+           <!------ <li><a href="PontoController?acao=Saida&id=${idFuncionario}"><span title="Marcar Saida">Marcar Saida</span></a></li> ---------->
     </ul>
 
 
