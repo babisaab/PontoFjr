@@ -62,6 +62,7 @@ public class ManterCargoController extends HttpServlet {
         try {
             String operacao = request.getParameter("operacao");
             request.setAttribute("operacao", operacao);
+            request.setAttribute("departamentos", DepartamentoDAO.getInstance().getAllDepartamentos());
             if (!operacao.equals("Incluir")) {
                 Long id = Long.parseLong(request.getParameter("id"));
                 Cargo cargo = CargoDAO.getInstance().getCargo(id);
@@ -85,7 +86,8 @@ public class ManterCargoController extends HttpServlet {
             } else {
                 String nome = request.getParameter("txtNomeCargo");
                 String cargaHorariaObrigatoria = request.getParameter("txtCargaHorariaObrigatoria");
-                Departamento departamento = DepartamentoDAO.getInstance().getDepartamento(1);
+                Long idDepartamento = Long.parseLong(request.getParameter("optDepartamento"));
+                Departamento departamento = DepartamentoDAO.getInstance().getDepartamento(idDepartamento);
                 Cargo cargo = new Cargo(nome, cargaHorariaObrigatoria, departamento);
                 if (operacao.equals("Incluir")) {
                     CargoDAO.getInstance().salvar(cargo);

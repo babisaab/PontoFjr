@@ -63,6 +63,10 @@
                         <td><input type="text" name="txtCidade" required=""  value="${funcionario.cidade}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
+                        <td>UF:</td>
+                        <td><input type="text" name="txtUf" required=""  value="${funcionario.uf}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
+                    </tr>
+                    <tr>
                         <td>Matrícula:</td>
                         <td><input type="text" name="txtMatricula"  required="" value="${funcionario.matricula}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
@@ -85,7 +89,16 @@
                         <td>E-mail:</td>
                         <td><input type="text" name="txtEmail" required="" value="${funcionario.email}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
-
+                    <tr>
+                        <td>Cargo:</td>
+                        <td>
+                            <select name="optCargo" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
+                            <c:forEach items="${cargos}" var="cargo">
+                                <option value="${cargo.id}" <c:if test="${funcionario.cargo.id == cargo.id}"> selected</c:if>>${cargo.nome}</option>  
+                            </c:forEach>
+                        </select>
+                    </td>
+                </tr>
                     <tr>
                         <td><input type="submit" name="btnConfirmar" value="Confirmar"></td>
                         <td><input type="text" name="txtIdFuncionario" value="${funcionario.id}" hidden="" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>

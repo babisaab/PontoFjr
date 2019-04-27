@@ -37,7 +37,7 @@ public class ManterFuncionarioController extends HttpServlet {
             request.setAttribute("operacao", operacao);
             request.setAttribute("cargos", CargoDAO.getInstance().getAllCargos());
             if (!operacao.equals("Incluir")) {
-                Long id = Long.parseLong(request.getParameter("id"));
+                Long id = Long.parseLong(request.getParameter("id").trim());
                 Funcionario funcionario = FuncionarioDAO.getInstance().getFuncionario(id);
                 request.setAttribute("funcionario", funcionario);
             }
@@ -75,9 +75,10 @@ public class ManterFuncionarioController extends HttpServlet {
                 String curso = request.getParameter("optCurso");
                 String dataAdmissao = request.getParameter("txtAdmissao");
                 String email = request.getParameter("txtEmail");
-//                Long idCargo = Long.parseLong(request.getParameter("optCargo"));;
-//                Cargo cargo = CargoDAO.getInstance().getCargo(idCargo);
-                Funcionario funcionario = new Funcionario(nomeCompleto, cpf, rg, sexo, dataNascimento, cep, logradouro, numero, complemento, bairro, cidade, uf, matricula, curso, dataAdmissao, email);
+                Long idCargo = Long.parseLong(request.getParameter("optCargo"));
+                Cargo cargo = CargoDAO.getInstance().getCargo(idCargo);
+                 
+                Funcionario funcionario = new Funcionario(nomeCompleto, cpf, rg, sexo, dataNascimento, cep, logradouro, numero, complemento, bairro, cidade, uf, matricula, curso, dataAdmissao, email, cargo);
                 if (operacao.equals("Incluir")) {
                     FuncionarioDAO.getInstance().salvar(funcionario);
                 } else if (operacao.equals("Editar")) {

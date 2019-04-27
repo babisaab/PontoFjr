@@ -21,11 +21,20 @@
                         <td>Carga Horaria Obrigatoria do Cargo:</td> 
                         <td><input type="text" required="" name="txtCargaHorariaObrigatoria" value="${cargo.cargaHorariaObrigatoria}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
+                                    </tr>
+                <tr>
+                    <td>Departamento:</td>
+                    <td>
+                        <select name="optDepartamento" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
+                            <c:forEach items="${departamentos}" var="funcionario">
+                                <option value="${departamento.id}" <c:if test="${cargo.departamento.id == departamento.id}"> selected</c:if>>${departamento.nome}</option>  
+                            </c:forEach>
+                        </select>
+                    </td>
+                </tr>
                     <tr>
                         <td><input type="submit" name="btnConfirmar" value="Confirmar"></td>
                         <td><input type="text" name="txtIdCargo" value="${cargo.id}" hidden="" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
-
-                </tr>
             </table>
         </form>
         <a href="PesquisaCargoController">

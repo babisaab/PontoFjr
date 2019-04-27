@@ -39,7 +39,7 @@ public class Funcionario implements Serializable {
 
        public Funcionario(String nomeCompleto, String cpf, String rg, String sexo, String dataNascimento,
             String cep, String logradouro, String numero, String complemento, String bairro, String cidade,
-            String uf, String matricula, String curso, String dataAdmissao, String email, Long id) {
+            String uf, String matricula, String curso, String dataAdmissao, String email, Cargo cargo) {
         this.nomeCompleto = nomeCompleto;
         this.cpf = cpf;
         this.rg = rg;
@@ -56,30 +56,9 @@ public class Funcionario implements Serializable {
         this.curso = curso;
         this.dataAdmissao = dataAdmissao;
         this.email = email;
-        this.id=id;
+        this.cargo = cargo;
     }
-    
-    public Funcionario(String nomeCompleto, String cpf, String rg, String sexo, String dataNascimento,
-            String cep, String logradouro, String numero, String complemento, String bairro, String cidade,
-            String uf, String matricula, String curso, String dataAdmissao, String email) {
-        this.nomeCompleto = nomeCompleto;
-        this.cpf = cpf;
-        this.rg = rg;
-        this.sexo = sexo;
-        this.dataNascimento = dataNascimento;
-        this.cep = cep;
-        this.logradouro = logradouro;
-        this.numero = numero;
-        this.complemento = complemento;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.uf = uf;
-        this.matricula = matricula;
-        this.curso = curso;
-        this.dataAdmissao = dataAdmissao;
-        this.email = email;
-    }
-	
+       
     public Long getId() {
         return id;
     }

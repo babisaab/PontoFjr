@@ -7,7 +7,7 @@ public class MainTest {
     public static void main(String[] args) {
         Departamento dep = new Departamento("Finanças", "Departamento responsável pelas finanças");
         Cargo cargo = new Cargo("Presidente", "20 horas", dep);
-        Funcionario fun = new Funcionario("João Vitor Pureza", "018.792.506-24", "MG-15.868.173", "Masculino", "23/05/1997", "36021-540", "Rua Dr. José Procópio Teixeira", "427", "apto 204", "Bom Pastor", "Juiz de Fora", "MG", "17011602", "BSI", "10/03/2019", "joão@pureza.com");
+        Funcionario fun = new Funcionario("João Vitor Pureza", "018.792.506-24", "MG-15.868.173", "Masculino", "23/05/1997", "36021-540", "Rua Dr. José Procópio Teixeira", "427", "apto 204", "Bom Pastor", "Juiz de Fora", "MG", "17011602", "BSI", "10/03/2019", "joão@pureza.com", cargo);
         Usuario usu = new Usuario("17011602", "123456", fun);
         Contato contatinho = new Contato("3232-3232", fun);
         Afastamento a1 = new Afastamento("19/03/2019", "22/03/2019", "Virose", "Doente", fun);
