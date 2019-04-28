@@ -15,27 +15,35 @@
         <h>Relatório de Informes por funcionário</h>
         <form action="RelatorioInformeParamController" method="post">
             Escolha um funcionário
-            <input type="text" name="paramFunc"/><br/>
+            <input type="text" name="paramFunc"/><br/> 
             <input type="submit"/>
         </form>
+        
+        
         <h>Relatório de Horários por funcionário</h>
         <form action="RelatorioHorarioParamController" method="post">
             Escolha um funcionário
             <input type="text" name="paramFunc"/><br/>
             <input type="submit"/>
         </form>
+        
+        
         <h>Relatório de Afastamentos por funcionário</h>
         <form action="RelatorioAfastamentoParamController" method="post">
             Escolha um funcionário
             <input type="text" name="paramFunc"/><br/>
             <input type="submit"/>
         </form>
+        
+        
         <h>Relatório de Cartões por funcionário</h>
         <form action="RelatorioCartaoParamController" method="post">
             Escolha um funcionário
             <input type="text" name="paramFunc"/><br/>
             <input type="submit"/>
         </form>
+        
+        
         <h>Relatório de Funcionários</h>
         <form action="RelatorioFuncParamController" method="post">
             Escolha um funcionário
@@ -45,6 +53,7 @@
         
         
         
+        <ul> 
         <li><a href="RelatorioAfastFuncController"><span title="Relatorio">Relatório de Afastamentos</span></a></li>
         <li><a href="RelatorioCargDeptController"><span title="Relatorio">Relatório de Cargos</span></a></li>
         <li><a href="RelatorioCargFuncController"><span title="Relatorio">Relatório de Departamentos</span></a></li>
@@ -52,6 +61,6 @@
         <li><a href="RelatorioInformeController"><span title="Relatorio">Relatório de Informes</span></a></li>
         <li><a href="RelatorioHorarioController"><span title="Relatorio">Relatório de Horários</span></a></li>
         <li><a href="RelatorioCfuncionarioController"><span title="Relatorio">Relatório de Funcionários</span></a></li>
-    
+        </ul>
     </body>
 </html>
