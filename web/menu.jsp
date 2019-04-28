@@ -36,6 +36,10 @@
             <li><a href="RelatorioHorarioController"><span title="Relatorio">Relatório de Horários</span></a></li>
             <li><a href="RelatorioCfuncionarioController"><span title="Relatorio">Relatório Funcionários e Cargos</span></a></li>
             <li><a href="RelatorioFuncParamController"><span title="Relatorio">Relatório Funcionários</span></a></li>
+            <li><a href="RelatorioCartaoParamController"><span title="Relatorio">Relatório de Cartões por funcionário</span></a></li>
+            <li><a href="RelatorioAfastamentoParamController"><span title="Relatorio">Relatório de Afastamentos por funcionário</span></a></li>
+
+            
     </ul>
     
       <ul>

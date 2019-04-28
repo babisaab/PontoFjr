@@ -120,6 +120,14 @@
         <servlet-name>RelatorioFuncParamController</servlet-name>
         <servlet-class>relatorio.RelatorioFuncParamController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RelatorioCartaoParamController</servlet-name>
+        <servlet-class>relatorio.RelatorioCartaoParamController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RelatorioAfastamentoParamController</servlet-name>
+        <servlet-class>relatorio.RelatorioAfastamentoParamController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>PesquisaAfastamentoController</servlet-name>
         <url-pattern>/PesquisaAfastamentoController</url-pattern>
@@ -239,6 +247,14 @@
     <servlet-mapping>
         <servlet-name>RelatorioFuncParamController</servlet-name>
         <url-pattern>/RelatorioFuncParamController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioCartaoParamController</servlet-name>
+        <url-pattern>/RelatorioCartaoParamController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioAfastamentoParamController</servlet-name>
+        <url-pattern>/RelatorioAfastamentoParamController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
