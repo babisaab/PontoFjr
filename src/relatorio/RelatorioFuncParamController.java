@@ -21,7 +21,7 @@ public class RelatorioFuncParamController extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             conexao = DriverManager.getConnection("jdbc:mysql://localhost/pontojr", "root", "");
             HashMap parametros = new HashMap();
-            parametros.put("PAR_func", Long.parseLong(request.getParameter("funcionario")));
+            parametros.put("PAR_func",request.getParameter("paramFunc"));
             String relatorio = getServletContext().getRealPath("/WEB-INF/classes/relatorio")+"/Funcionarios.jasper";
             JasperPrint jp = JasperFillManager.fillReport(relatorio, parametros, conexao);
             byte[] relat = JasperExportManager.exportReportToPdf(jp);
