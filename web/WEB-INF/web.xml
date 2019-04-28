@@ -128,6 +128,10 @@
         <servlet-name>RelatorioAfastamentoParamController</servlet-name>
         <servlet-class>relatorio.RelatorioAfastamentoParamController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RelatorioInformeParamController</servlet-name>
+        <servlet-class>relatorio.RelatorioInformeParamController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>PesquisaAfastamentoController</servlet-name>
         <url-pattern>/PesquisaAfastamentoController</url-pattern>
@@ -255,6 +259,10 @@
     <servlet-mapping>
         <servlet-name>RelatorioAfastamentoParamController</servlet-name>
         <url-pattern>/RelatorioAfastamentoParamController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioInformeParamController</servlet-name>
+        <url-pattern>/RelatorioInformeParamController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
