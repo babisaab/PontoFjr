@@ -32,7 +32,7 @@ public class ManterDepartamentoController extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ManterCargoController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ManterDepartamentoController.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
             Logger.getLogger(ManterDepartamentoController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -44,7 +44,7 @@ public class ManterDepartamentoController extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ManterCargoController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ManterDepartamentoController.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
             Logger.getLogger(ManterDepartamentoController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -69,7 +69,7 @@ public class ManterDepartamentoController extends HttpServlet {
             view.forward(request, response);
         } catch (ServletException e) {
         } catch (IOException ex) {
-            Logger.getLogger(ManterCargoController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ManterDepartamentoController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -98,7 +98,7 @@ public class ManterDepartamentoController extends HttpServlet {
             RequestDispatcher view = request.getRequestDispatcher("PesquisaDepartamentoController");
             view.forward(request, response);
         } catch (IOException ex) {
-            Logger.getLogger(ManterCargoController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ManterDepartamentoController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

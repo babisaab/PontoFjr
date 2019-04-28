@@ -112,6 +112,14 @@
         <servlet-name>RelatorioHorarioController</servlet-name>
         <servlet-class>relatorio.RelatorioHorarioController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RelatorioCfuncionarioController</servlet-name>
+        <servlet-class>relatorio.RelatorioCfuncionarioController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RelatorioFuncParamController</servlet-name>
+        <servlet-class>relatorio.RelatorioFuncParamController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>PesquisaAfastamentoController</servlet-name>
         <url-pattern>/PesquisaAfastamentoController</url-pattern>
@@ -223,6 +231,14 @@
     <servlet-mapping>
         <servlet-name>RelatorioHorarioController</servlet-name>
         <url-pattern>/RelatorioHorarioController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioCfuncionarioController</servlet-name>
+        <url-pattern>/RelatorioCfuncionarioController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioFuncParamController</servlet-name>
+        <url-pattern>/RelatorioFuncParamController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

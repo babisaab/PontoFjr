@@ -64,7 +64,7 @@ public class ManterCargoController extends HttpServlet {
             request.setAttribute("operacao", operacao);
             request.setAttribute("departamentos", DepartamentoDAO.getInstance().getAllDepartamentos());
             if (!operacao.equals("Incluir")) {
-                Long id = Long.parseLong(request.getParameter("id"));
+                Long id = Long.parseLong(request.getParameter("id").trim());
                 Cargo cargo = CargoDAO.getInstance().getCargo(id);
                 request.setAttribute("cargo", cargo);
             }
@@ -80,7 +80,7 @@ public class ManterCargoController extends HttpServlet {
         try {
 
             if (operacao.equals("Excluir")) {
-                Long id = Long.parseLong(request.getParameter("txtIdCargo"));
+                Long id = Long.parseLong(request.getParameter("txtIdCargo").trim());
 
                 CargoDAO.getInstance().excluir(CargoDAO.getInstance().getCargo(id));
             } else {
@@ -92,7 +92,7 @@ public class ManterCargoController extends HttpServlet {
                 if (operacao.equals("Incluir")) {
                     CargoDAO.getInstance().salvar(cargo);
                 } else if (operacao.equals("Editar")) {
-                    Long id = Long.parseLong(request.getParameter("txtIdCargo"));
+                    Long id = Long.parseLong(request.getParameter("txtIdCargo").trim());
 
                     cargo.setId(id);
                     CargoDAO.getInstance().salvar(cargo);
