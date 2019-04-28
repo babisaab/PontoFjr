@@ -27,19 +27,7 @@
             <li><a href="PesquisaInformeController?acao=All"><span title="Informe">Informe</span></a></li>
             <li><a href="PesquisaUsuarioController"><span title="Usuario">Usuário</span></a></li>
             
-            
-            <li><a href="RelatorioAfastFuncController"><span title="Relatorio">Relatório de Afastamentos</span></a></li>
-            <li><a href="RelatorioCargDeptController"><span title="Relatorio">Relatório de Cargos</span></a></li>
-            <li><a href="RelatorioCargFuncController"><span title="Relatorio">Relatório de Departamentos</span></a></li>
-            <li><a href="RelatorioCartaoController"><span title="Relatorio">Relatório de Cartões</span></a></li>
-            <li><a href="RelatorioInformeController"><span title="Relatorio">Relatório de Informes</span></a></li>
-            <li><a href="RelatorioHorarioController"><span title="Relatorio">Relatório de Horários</span></a></li>
-            <li><a href="RelatorioCfuncionarioController"><span title="Relatorio">Relatório Funcionários e Cargos</span></a></li>
-            <li><a href="RelatorioFuncParamController"><span title="Relatorio">Relatório Funcionários</span></a></li>
-            <li><a href="RelatorioCartaoParamController"><span title="Relatorio">Relatório de Cartões por funcionário</span></a></li>
-            <li><a href="RelatorioAfastamentoParamController"><span title="Relatorio">Relatório de Afastamentos por funcionário</span></a></li>
-            <li><a href="RelatorioInformeParamController"><span title="Relatorio">Relatório de Informes por funcionário</span></a></li>
-            <li><a href="RelatorioHorarioParamController"><span title="Relatorio">Relatório de Horários por funcionário</span></a></li>
+            <li><a href="report.jsp"><span title="Relatorio">Relatórios</span></a></li>
     </ul>
     
       <ul>
