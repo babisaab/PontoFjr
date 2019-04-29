@@ -16,13 +16,17 @@ public class PesquisaAfastamentoController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String acao = request.getParameter("acao");
         Long id = (long)0;
+        Long idFuncionario = (long)0;
         if(request.getParameter("id") != null){
             id = Long.parseLong(request.getParameter("id"));
+        }
+         if(request.getParameter("idFuncionario") != null){
+            idFuncionario = Long.parseLong(request.getParameter("idFuncionario"));
         }
         if(acao.equals("Only")){
             request.setAttribute("acao", acao);
             request.setAttribute("afastamentos", AfastamentoDAO.getInstance().getAllAfastamentos());
-            request.setAttribute("funcionarios", FuncionarioDAO.getInstance().getAllFuncionarios());
+            request.setAttribute("funcionario", FuncionarioDAO.getInstance().getFuncionario(id));
         }else{
             request.setAttribute("afastamentos", AfastamentoDAO.getInstance().getAllAfastamentos());
             request.setAttribute("funcionarios", FuncionarioDAO.getInstance().getAllFuncionarios());

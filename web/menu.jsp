@@ -3,6 +3,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html lang="pt-br">
     <head>
+        
         <title> Menu</title>
 
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -31,7 +32,7 @@
     </ul>
     
       <ul>
-            <li><a href="PesquisaAfastamentoController?acao=Only&id=${idFuncionario}"><span title="Seus Afastamentos">Seus Afastamentos</span></a></li>
+            <li><a href="PesquisaAfastamentoController?acao=Only&id=${id}"><span title="Seus Afastamentos">Seus Afastamentos</span></a></li>
             <li><a href="PesquisaCartaoController?acao=Only&id=${idFuncionario}"><span title="Seus Cartões">Seus Cartões</span></a></li>
             <li><a href="PesquisaHorarioController?acao=Only&id=${idFuncionario}"><span title="Seus Horários">Seus Horarios</span></a></li>
             <li><a href="PesquisaInformeController?acao=Only&id=${idFuncionario}"><span title="Seus Informes">Seus Informes</span></a></li>
