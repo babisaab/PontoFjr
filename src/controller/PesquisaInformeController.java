@@ -9,18 +9,30 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import model.Informe;
 
 public class PesquisaInformeController extends HttpServlet {
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String acao = request.getParameter("acao");
-        Long id = (long)0;
-        if(request.getParameter("id") != null){
-            id = Long.parseLong(request.getParameter("id"));
-        }
+   
         if(acao.equals("Only")){
+            
+             Long id = Long.parseLong(request.getParameter("id"));
             request.setAttribute("acao", acao);
-            request.setAttribute("informes", InformeDAO.getInstance().getAllInformes());
+            List<Informe> todosAfastamentos = new ArrayList<Informe>();
+            List<Informe> afastamentos = new ArrayList<Informe>();
+            todosAfastamentos = InformeDAO.getInstance().getAllInformes();
+            for (Informe afastamento : todosAfastamentos) {
+                if (afastamento.getFuncionario().getId() == id) {
+                    afastamentos.add(afastamento);
+                }
+            }
+            
+            request.setAttribute("acao", acao);
+            request.setAttribute("informes", afastamentos);
             request.setAttribute("funcionarios", FuncionarioDAO.getInstance().getAllFuncionarios());
         }else{
             request.setAttribute("informes", InformeDAO.getInstance().getAllInformes());

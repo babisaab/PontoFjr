@@ -9,20 +9,32 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import model.Horario;
 
 public class PesquisaHorarioController extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String acao = request.getParameter("acao");
-        Long id = (long)0;
-        if(request.getParameter("id") != null){
-            id = Long.parseLong(request.getParameter("id"));
-        }
-        if(acao.equals("Only")){
+
+        if (acao.equals("Only")) {
+
+            Long id = Long.parseLong(request.getParameter("id"));
             request.setAttribute("acao", acao);
-            request.setAttribute("horarios", HorarioDAO.getInstance().getAllHorarios());
+            List<Horario> todosAfastamentos = new ArrayList<Horario>();
+            List<Horario> afastamentos = new ArrayList<Horario>();
+            todosAfastamentos = HorarioDAO.getInstance().getAllHorarios();
+            for (Horario afastamento : todosAfastamentos) {
+                if (afastamento.getFuncionario().getId() == id) {
+                    afastamentos.add(afastamento);
+                }
+            }
+
+            request.setAttribute("acao", acao);
+            request.setAttribute("horarios", afastamentos);
             request.setAttribute("funcionarios", FuncionarioDAO.getInstance().getAllFuncionarios());
-        }else{
+        } else {
             request.setAttribute("horarios", HorarioDAO.getInstance().getAllHorarios());
             request.setAttribute("funcionarios", FuncionarioDAO.getInstance().getAllFuncionarios());
         }
