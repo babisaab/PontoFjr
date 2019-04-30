@@ -1,22 +1,22 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Pesquisa de Hor√°rios</title>
+        <title>Pesquisa de Hor·rios</title>
     </head>
     <body>
-        <h1>Pesquisa de Hor√°rios</h1>
+        <h1>Pesquisa de Hor·rios</h1>
         <table border="1">
             <tr>
                 <th>Dia da Semana</th>
-                <th>Hora In√≠cio</th>
+                <th>Hora InÌcio</th>
                 <th>Hora Fim</th>
                 <c:if test="${acao != 'Only'}">
                     <th>Funcionario</th>
-                    <th colspan="2">A√ß√µes</th>
+                    <th colspan="2">AÁıes</th>
                 </c:if>
             </tr>
             <c:forEach items="${horarios}" var="horario">

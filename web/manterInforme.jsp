@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
                         <td><input type="text" name="txtMotivoInforme" value="${informe.motivo}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
-                        <td>Funcion√°rio:</td>
+                        <td>Funcion·rio:</td>
                         <td>
                             <select name="optFuncionario" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
                             <c:forEach items="${funcionarios}" var="funcionario">

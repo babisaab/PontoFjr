@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
                 <th>Motivo</th>
                 <c:if test="${acao != 'Only'}">
                     <th>Funcionario</th>
-                    <th colspan="2">AÃ§Ãµes</th>
+                    <th colspan="2">Ações</th>
                 </c:if>
             </tr>
             <c:forEach items="${informes}" var="informe">

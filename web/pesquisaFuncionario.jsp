@@ -1,23 +1,23 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Pesquisa de Funcion√°rio</title>
+        <title>Pesquisa de Funcion·rio</title>
     </head>
     <body>
-        <h1>Pesquisa de Funcion√°rios</h1>
+        <h1>Pesquisa de Funcion·rios</h1>
         <table border="1">
             <tr>
                 <th>Nome Completo</th>
                 <th>CPF</th>
                 <th>Data de Nascimento</th>
-                <th>Matr√≠cula</th>
-                <th>Data de Admiss√£o</th>
+                <th>MatrÌcula</th>
+                <th>Data de Admiss„o</th>
                 <th>E-mail</th>
-                <th colspan="2">A√ß√µes</th>
+                <th colspan="2">AÁıes</th>
             </tr>
             <c:forEach items="${funcionarios}" var="funcionario">
                 <tr>

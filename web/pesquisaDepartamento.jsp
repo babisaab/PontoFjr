@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
@@ -12,8 +12,8 @@
         <table border="1">
             <tr>
                 <th>Nome</th>
-                <th>descriÃ§Ã£o</th>
-                <th colspan="2">AÃ§Ãµes</th>
+                <th>descrição</th>
+                <th colspan="2">Ações</th>
             </tr>
             <c:forEach items="${departamentos}" var="departamento">
                 <tr>

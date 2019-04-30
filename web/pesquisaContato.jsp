@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
             <tr>
                 <th>Telefone</th>
                 <th>Funcionario</th>
-                <th colspan="2">AÃ§Ãµes</th>
+                <th colspan="2">Ações</th>
             </tr>
             <c:forEach items="${contatos}" var="contato">
                 <tr>
