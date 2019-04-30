@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
@@ -47,7 +47,7 @@
                         <td><input type="text" name="txtLogradouro"  required="" value="${funcionario.logradouro}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
-                        <td>NÃºmero:</td>
+                        <td>Número:</td>
                         <td><input type="text" name="txtNumero" required=""  value="${funcionario.numero}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
@@ -67,7 +67,7 @@
                         <td><input type="text" name="txtUf" required=""  value="${funcionario.uf}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
-                        <td>MatrÃ­cula:</td>
+                        <td>Matrícula:</td>
                         <td><input type="text" name="txtMatricula"  required="" value="${funcionario.matricula}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
@@ -75,14 +75,14 @@
                         <td>
                             <select name="optCurso" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
                             <option value="BSI" <c:if test="${funcionario.sexo == 'BSI'}"> selected</c:if>>BSI</option>
-                            <option value="Mecatronica" <c:if test="${funcionario.sexo == 'Mecatronica'}"> selected</c:if>>Engenharia MecatrÃ´nica</option>
-                            <option value="Metalurgica" <c:if test="${funcionario.sexo == 'Metalugica'}"> selected</c:if>>Engenharia MetalÃºgica</option>
-                            <option value="Fisica" <c:if test="${funcionario.sexo == 'Fisica'}"> selected</c:if>>Licenciatura em FÃ­sica</option>
+                            <option value="Mecatronica" <c:if test="${funcionario.sexo == 'Mecatronica'}"> selected</c:if>>Engenharia Mecatrônica</option>
+                            <option value="Metalurgica" <c:if test="${funcionario.sexo == 'Metalugica'}"> selected</c:if>>Engenharia Metalúgica</option>
+                            <option value="Fisica" <c:if test="${funcionario.sexo == 'Fisica'}"> selected</c:if>>Licenciatura em Física</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <td>Data de AdmissÃ£o:</td>
+                        <td>Data de Admissão:</td>
                         <td><input type="text" name="txtAdmissao" required="" value="${funcionario.dataAdmissao}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>

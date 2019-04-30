@@ -1,20 +1,20 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>${operacao} Cart√£o</title>
+        <title>${operacao} Cart„o</title>
     </head>
     <body>
-        <h1>${operacao} Cart√£o</h1>
+        <h1>${operacao} Cart„o</h1>
 
         <form action="ManterCartaoController?acao=confirmarOperacao&operacao=${operacao}" method="post" name="frmManterCartao">
             <table>
 
                 <tr> 
-                    <td>Tipo do Cart√£o:</td> 
+                    <td>Tipo do Cart„o:</td> 
                     <td>
                         <select name="optTipoCartao" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
                             <option value="Assiduidade" <c:if test="${cartao.tipo == 'Assiduidade'}"> selected</c:if>>Assiduidade</option>
@@ -23,7 +23,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Cor do Cart√£o:</td> 
+                        <td>Cor do Cart„o:</td> 
                         <td>
                             <select  required="" name="optCorCartao" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
                             <option value="Azul" <c:if test="${cartao.cor == 'Azul'}"> selected</c:if>>Azul</option>
@@ -34,7 +34,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Motivo do Cart√£o:</td> 
+                        <td>Motivo do Cart„o:</td> 
                         <td><input type="text" name="txtMotivoCartao" required="" value="${cartao.motivo}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
@@ -42,7 +42,7 @@
                         <td><input type="date" name="txtDataCartao" required="" value="${cartao.data}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
-                        <td>Funcion√°rio:</td>
+                        <td>Funcion·rio:</td>
                         <td>
                             <select name="optFuncionario" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
                             <c:forEach items="${funcionarios}" var="funcionario">
