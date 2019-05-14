@@ -19,9 +19,11 @@ public class DepartamentoDAO {
         EntityTransaction tx = em.getTransaction();
         try {
             tx.begin();
-          
+          if (departamento.getId() != null) {
+                em.merge(departamento);
+            } else {
                 em.persist(departamento);
-            
+            }
             tx.commit();
         } catch (Exception e) {
             if (tx != null && tx.isActive()) {

@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
@@ -13,11 +13,11 @@
         <form action="ManterAfastamentoController?acao=confirmarOperacao&operacao=${operacao}" method="post" name="frmManterAfastamento">
             <table>
                 <tr>
-                    <td>Data de In√≠cio:</td> 
+                    <td>Data de InÌcio:</td> 
                     <td><input type="date"  required="" name="txtInicioAfastamento" value="${afastamento.dataInicio}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
-                        <td>Data de T√©rmino:</td> 
+                        <td>Data de TÈrmino:</td> 
                         <td><input type="date" required="" name="txtTerminoAfastamento" value="${afastamento.dataFim}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
@@ -26,10 +26,10 @@
                     </tr>
                     <tr>
                         <td>Tipo:</td> 
-                        <td><input type="text" required="" name="txtTipoAfastamento" value="${afastamento.tipo}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
+                        <td><input type="text" required="" name="txtTipo" value="${afastamento.tipo}" <c:if test="${operacao == 'Excluir'}"> readonly</c:if>></td>
                     </tr>
                     <tr>
-                        <td>Funcion√°rio:</td>
+                        <td>Funcion·rio:</td>
                         <td>
                             <select name="optFuncionario" <c:if test="${operacao == 'Excluir'}"> disabled</c:if>>
                             <c:forEach items="${funcionarios}" var="funcionario">
