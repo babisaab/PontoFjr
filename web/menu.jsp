@@ -30,7 +30,7 @@
                 <li><a href="PesquisaInformeController?acao=All"><span title="Informe">Informe</span></a></li>
                 <li><a href="PesquisaUsuarioController"><span title="Usuario">Usuário</span></a></li>
 
-                <li><a href="report.jsp"><span title="Relatorio">Relatórios</span></a></li>
+                <li><a href="relatorioReport.jsp"><span title="Relatorio">Relatórios</span></a></li>
             </ul>
 
             <ul>
